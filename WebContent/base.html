@@ -10,30 +10,88 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 </head>
 <body>
+
 	<header>
 		<div class="container">
 			<nav class="row" role="navigation">
-				<div class="col-md-2 brd">
+
+				<div id="icon" class="col-md-2 brd">
 					<img id="logo" src="images/logo.jpg" alt="VK's Closet">
 				</div>
-				<div id="menu" class="col-md-8 brd">
+
+				<div id="searchMenu" class="col-md-8 brd"
+>
 					<nav class="row" role="navigation">
-						<div class="md-form">
-							<input class="form-control" type="text" placeholder="Search"
-								aria-label="Search">
+						<div class="col-xs-8 col-xs-offset-2">
+							<div class="input-group">
+								<input type="text" class="form-control" name="searchedItem"
+									placeholder="Search Here..."> <span
+									class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</span>
+							</div>
 						</div>
 					</nav>
-					
+					<nav class="row" role="navigation">
+						<ul id="optionlistlinks" class="nav nav-tabs">
+							<li class="nav-item"><a class="nav-link active" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+							<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+						</ul>
+					</nav>
 				</div>
-				<div id="menu" class="col-md-1 brd"></div>
-				<div id="menu" class="col-md-1 brd"></div>
+
+				<div id="accountOption" class="col-md-2 brd">
+					<nav class="row" role="navigation">
+						<div class="dropdown">
+							<button id="account" class="btn btn-default dropdown-toggle"
+								type="button" data-toggle="dropdown">
+								Your Account <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">Account Actions</li>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Switch Account</a></li>
+								<li><a href="#">Logout</a></li>
+
+								<li class="divider"></li>
+								<li class="dropdown-header">Personalize Actions</li>
+								<li><a href="#">Favourite list</a></li>
+								<li><a href="#">Design your Items</a></li>
+								<li><a href="#">Send Feedback</a></li>
+							</ul>
+						</div>
+					</nav>
+					<nav id = "cart" class="row" role="navigation">
+					<i class="fa fa-shopping-cart" href="#" style="font-size:48px;color:#00ffff"></i>
+					</nav>
+				</div>
+
 			</nav>
 		</div>
 	</header>
+
 	<section>
 		<div class="container">
 			<nav class="row" role="navigation">
@@ -57,13 +115,13 @@
 				<div class="col-md-4 brd">
 					<p>Connect with us on</p>
 					<ul class="socialmedia">
-						<li><a
+						<li id="scMedia"><a
 							href="https://www.facebook.com/VKs-Closet-183062095807184/?__tn__=HHH-R"
 							class="fa fa-facebook"></a></li>
-						<li><a href="#" class="fa fa-twitter"></a></li>
-						<li><a href="#" class="fa fa-google"></a></li>
-						<li><a href="#" class="fa fa-instagram"></a></li>
-						<li><a href="#" class="fa fa-android"></a></li>
+						<li id="scMedia"><a href="#" class="fa fa-twitter"></a></li>
+						<li id="scMedia"><a href="#" class="fa fa-google"></a></li>
+						<li id="scMedia"><a href="#" class="fa fa-instagram"></a></li>
+						<li id="scMedia"><a href="#" class="fa fa-android"></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4 brd">
@@ -82,7 +140,7 @@
 					<p>© Copyright 2000 VK's Closet</p>
 				</div>
 				<div class="col-md-6 brd">
-					<p>Built by Rutu Patel</p>
+					<p>Build by Rutu Patel</p>
 				</div>
 			</nav>
 		</div>

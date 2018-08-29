@@ -4,43 +4,56 @@ body {
 
 header {
 	background-color: #000000;
-	padding: 20px; /* Space around the inside border content*/
-	color: #f5ea10;
+	padding:10px;
+	color: #00ffff;
+	text-align: center;
+	font-weight: bold;
 }
 
 footer {
 	background-color: #000000;
 	padding: 10px;
-	color: #f5ea10;
+	color: #00ffff;
+	text-align: center;
+	font-weight: bold;
 }
 
-li {
+#account {
+	text-align: center;
+	font-weight: bold;
+	color: #00ffff;
+	background-color: #60bf00;
+}
+
+.nav-item{
+	margin:3px;
+}
+
+.nav-link{
+	color: #00ffff;
+	padding:20px;
+}
+
+
+
+.nav-tabs{
+	padding-top:45px;
+}
+
+#logo {
+	width: 125px;
+	height: 125px;
+}
+
+#scMedia {
 	display: inline-block;
 	font-size: 25px;
 }
 
-#logo{
-	width:125px;
-	height:125px;
-}
-
 .subbutton {
-	background-color: #000000;
+	background-color: #60bf00;
 }
 
-#tempMenu {
-	background-color: #ffb9dc;
-}
-
-#items{
-background-color: #eae8ea;	
-}
-
-
-#footerContainer{
-	text-align: center;
-	font-weight: bold;
-}
 
 .fa {
 	padding: 15px;
@@ -56,7 +69,6 @@ background-color: #eae8ea;
 .fa-facebook {
 	background: #3B5998;
 	color: white;
-	
 }
 
 .fa-twitter {
@@ -77,9 +89,6 @@ background-color: #eae8ea;
 .fa-android {
 	background: #a4c639;
 	color: white;
-}
-.custom-search-form{
-margin-top:5px;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
