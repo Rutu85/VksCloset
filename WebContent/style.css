@@ -18,10 +18,14 @@ footer {
 	font-weight: bold;
 }
 
+#main{
+	text-align: center;
+}
+
 #account {
 	text-align: center;
 	font-weight: bold;
-	color: #00ffff;
+  	color: #00ffff;
 	background-color: #60bf00;
 }
 
@@ -29,12 +33,26 @@ footer {
 	margin:3px;
 }
 
+.main-container{
+	padding:0px;
+}
+
 .nav-link{
 	color: #00ffff;
 	padding:20px;
 }
 
+.mySlides {
+	height:200px;
+	width:100%;
+	border-style: solid;
+    border-color: red green blue yellow;
+	}
 
+#bannerImage1,#bannerImage2, #bannerImage3, #bannerImage4, #bannerImage5 {
+	height:250px;
+	width:100%;
+}
 
 .nav-tabs{
 	padding-top:45px;
